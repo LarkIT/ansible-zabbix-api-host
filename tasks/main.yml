@@ -1,0 +1,20 @@
+# roles/zabbix-api-host/tasks/main.yml
+# Create Zabbix host
+
+- name: Create Zabbix host
+  zabbix_host:
+    server_url: "{{ zabbix_server_url }}"
+    login_user: "{{ zabbix_login_user }}"
+    login_password: "{{ zabbix_login_password }}"
+    host_name: "{{ zabbix_host_name }}"
+    host_groups: "{{ zabbix_host_groups }}"
+    link_templates: "{{ zabbix_host_link_templates }}"
+    status: "{{ zabbix_host_status }}"
+    state: "{{ zabbix_host_state }}"
+    interfaces:
+      - type: 1
+        main: 1
+        useip: "{{ zabbix_host_useip }}"
+        ip: "{{ zabbix_host_ip }}"
+        dns: "{{ zabbix_host_dns }}"
+        port: "{{ zabbix_host_port }}"
