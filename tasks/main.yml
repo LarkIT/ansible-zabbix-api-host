@@ -35,8 +35,7 @@
       status: "{{ zabbix_host_status }}"
       state: "{{ zabbix_host_state }}"
       inventory_mode: "{{ zabbix_host_inventory_mode }}"
-      inventory_zabbix:
-        url_a: "{{ zabbix_host_url_a }}"
+      inventory_zabbix: "{{ zabbix_host_inventory_zabbix }}"
       interfaces:
       - type: 1
         main: 1

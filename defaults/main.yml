@@ -9,4 +9,4 @@ zabbix_host_state: present
 zabbix_host_port: 10050
 
 zabbix_host_inventory_mode: disabled
-zabbix_host_url_a: 
+zabbix_host_inventory_zabbix: 
