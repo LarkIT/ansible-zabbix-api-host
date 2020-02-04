@@ -8,7 +8,6 @@
     login_user: "{{ zabbix_login_user }}"
     login_password: "{{ zabbix_login_password }}"
     host_name: "{{ zabbix_host_name }}"
-    visible_name: "{{ zabbix_host_visible_name }}"
     host_groups: "{{ zabbix_host_groups }}"
     link_templates: "{{ zabbix_host_link_templates }}"
     status: "{{ zabbix_host_status }}"
