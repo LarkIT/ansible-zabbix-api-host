@@ -13,7 +13,7 @@
     status: "{{ zabbix_host_status }}"
     state: "{{ zabbix_host_state }}"
     interfaces:
-    - type: 1
+    - type: "{{ zabbix_host_interface_type }}" 
       main: 1
       useip: "{{ zabbix_host_useip }}"
       ip: "{{ zabbix_host_ip }}"
