@@ -18,4 +18,3 @@
       useip: "{{ zabbix_host_useip }}"
       ip: "{{ zabbix_host_ip }}"
       dns: "{{ zabbix_host_dns }}"
-      port: "{{ zabbix_host_port }}"
