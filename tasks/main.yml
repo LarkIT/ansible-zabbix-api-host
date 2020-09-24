@@ -12,6 +12,7 @@
     link_templates: "{{ zabbix_host_link_templates }}"
     status: "{{ zabbix_host_status }}"
     state: "{{ zabbix_host_state }}"
+    proxy: "{{ zabbix_host_proxy_name | default(omit) }}"
     interfaces:
     - type: "{{ zabbix_host_interface_type }}" 
       main: 1
